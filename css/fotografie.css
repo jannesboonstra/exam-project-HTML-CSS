@@ -1,0 +1,55 @@
+
+@media screen and (min-width: 320px) {
+
+    .fotografeer {
+        padding: .5rem;
+        padding-bottom: .2rem;
+        background-color: ivory;
+        color: #6991c7;
+        border-radius: .4rem;
+    }
+
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+
+    .photo:hover {
+        background-color: transparent;
+    }
+    
+    .photo {
+        width: 75%;
+        max-width: 30rem;
+        margin: auto;
+        margin-bottom: .5rem;
+    }    
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .photos {
+        flex-direction: row;
+        flex: 1;
+        margin: auto;
+        gap: 1rem;
+        flex-flow: wrap;
+    }
+
+    .photo {
+        width: 48%;
+        max-width: 43rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .photos {
+        max-width: 88rem;
+    }
+
+}

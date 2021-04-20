@@ -1,0 +1,178 @@
+@media screen and (min-width: 320px) {
+
+    .home{
+        padding: .5rem;
+        padding-bottom: .2rem;
+        background-color: ivory;
+        color: #6991c7;
+        border-radius: .4rem;
+    }
+
+    .maincontent {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .maincontent p::first-letter {
+        font-size: 1.3em;
+        letter-spacing: .15em;
+        text-shadow: .1em .1em .1em #6991c7;
+    }
+
+   .mainfotovideo {
+        margin: 1rem;
+    }
+
+    .sec1photo, .sec1video, .sec1frame {
+        width: 92vw;
+    }
+
+    .mainframefoto {
+        margin: 1rem;
+        width: 90vw;
+    }
+
+    .fig {
+        break-inside: avoid;
+        margin: auto;
+        margin-bottom: 1rem;
+        background-image: linear-gradient(rgba(163, 189, 237, .2),rgba(105, 145, 199, .2) );
+        border-radius: .5rem;
+        text-align: center;
+    }
+
+    .figimg {
+        padding: 5vw;
+        padding-bottom: 0rem;
+        width: 80vw;
+    }
+
+    figcaption {
+        padding-bottom: .5rem;
+    }
+
+    .linkje {
+        padding: .5rem;
+        color: white;
+        background-color: #6991c7;
+        border-radius: .4rem;
+    }
+
+    .linkje:hover{
+        background-color: #00203FFF;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+
+    :root {
+        --width1: 45vw;
+    }
+
+    .maincontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        gap: 2rem
+    }
+    
+    .mainfotovideo {
+        width: 95vw;
+    }
+
+    .sec1photo, .sec1video, .sec1frame {
+        width: 30vw;
+    }  
+
+    .sec1frame {
+        width: 45vw;
+        height: calc((var(--width1)/16)*(1*9));
+    }
+
+    .mainframefoto {
+       width: 95vw; 
+    }
+
+    .fig {
+        display: flow-root;
+    }
+
+    .figimg {
+        padding: 1vw;
+        width: 65%;
+        break-inside: avoid;
+    }
+
+    #img1, #img3 {
+        float: left;
+        
+    }
+
+    #img2 {
+        float: right;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    :root {
+        --width2: 18vw;
+    }
+
+    .sec1photo, .sec1video, .sec1frame {
+        width: 18vw;
+    }  
+
+    .sec1frame {
+        height: calc((var(--width2)/16)*(1*9));
+    }
+
+    .figsec {
+        columns: 3;
+        column-gap: .5rem;
+    }
+
+    .figimg {
+        width:28vw;
+        padding: .8vw;
+        break-inside: avoid;
+    }
+
+    #img1, #img2, #img3 {
+        float: initial;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .sec1photo, .sec1video, .sec1frame {
+        width: 17rem;
+    }  
+    
+    .sec1frame {
+        height: calc((17rem/16)*(1*9));
+    }
+
+    .mainfotovideo {
+        width: 88rem;
+    }
+
+    .mainframefoto {
+        max-width: 88rem;
+        
+    }
+
+    .figimg {
+        padding: .5rem;
+        max-width: 90%;
+    }
+
+}

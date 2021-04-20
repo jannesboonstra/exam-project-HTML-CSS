@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize);
+
+h2 {
+  text-align: center;
+}
+
+.formlijst {
+  width: 85vw;
+  max-width: 30rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input, textarea {
+  width: 80vw;
+  max-width: 30rem;
+  background-color: rgba(163, 189, 237, .2);
+  border: none;
+  border-radius: .2rem;
+  border-bottom: 2px solid #6991c7;
+}
+
+textarea {
+  height: 20rem;
+  resize: none;
+}
+
+#mapid {
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+#submit {
+  padding: .5rem;
+  color: white;
+  background-color: #6991c7;
+  border-radius: .4rem;
+}
+
+#submit:hover{
+  background-color: #00203FFF;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="javascript/text.js"></script> 
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p class="fotografie"><a href="index.html" class="nontrans">fotografie</a></p>
+            <a href="index.html" class="nontrans"><img src="img/logo/logo.png" class="logoimg" alt="Dit is een bedrijfslogo waarop een getekende man staat met een camera in de hand"></a>
+        </div>
+        <div>
+            <div class="navbar">
+                <div><a href="index.html" class="home">Home</a></div>
+                <div class="dropdown">
+                    <div class="dropdownbtn">
+                        <a class="fotografeer">Fotografie</a>
+                        <div class="dropdown-content">
+                            <a href="portrait.html" class="portrait">Portrait</a>
+                            <a href="live.html" class="live">Live</a>
+                            <a href="animals.html" class="animals">Animals</a>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="contact.html" class="contact">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+
+    </header>
+    <main>
+        <div id="mapid"></div>
+        <script src="javascript/map.js"></script>
+        <h2 id="js">
+            <span id="anim"></span><span id="shuffle"></span>
+        </h2>
+        <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="contact">
+            <ul style="list-style-type: none;" class="formlijst">
+                <li>
+                    <label for="naam">Naam&colon;</label>
+                    <input id="naam" name="naam" type="text" required>
+                </li>
+                <li>
+                    <label for="telnummer">Telefoonnummer&colon;</label>
+                    <input id="telnummer" name="telnummer" type="text" minlength="10" maxlength="11">
+                </li>
+                <li>
+                    <label for="mail">E-mailadres&colon; <small>iemand&commat;domein&period;nl</small></label>
+                    <input id="mail" name="mail" type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2.4}$" required>
+                </li>
+                <li>
+                    <label for="opmerkingen">Opmerkingen&colon;</label>
+                    <textarea id="opmerkingen" name="opmerkingen" required></textarea>                        
+                </li>  
+                <li>
+                    <input form="contact" type="submit" value="verzend" id="submit"> 
+                </li>  
+            </ul>
+        </form>
+        
+    </main>
+    <footer>
+        <p>
+            Jannes Boonstra<br>
+            Hooglandswyk 61<br>
+            9202 AB Drachten<br>
+            06 &dash; 24 833 982<br>
+        </p>
+        <div class="follow">
+            <p>Follow me</p>
+            <div class="sociallist">
+                <a href="https://www.facebook.com/jannes.boonstra.12"><img src="img/logo/facebook.png" class="social" alt="Dit is een bedrijfslogo van facebook"></a>
+                <a href="https://www.instagram.com/jannesboonstra.nl/"><img src="img/logo/instagram.png" class="social" alt="Dit is een bedrijfslogo van instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
